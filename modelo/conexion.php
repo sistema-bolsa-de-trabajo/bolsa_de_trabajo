@@ -1,5 +1,7 @@
 <?php
 
+require_once($_SERVER['DOCUMENT_ROOT'] . "/bolsa_de_trabajo/config.php");
+
 class conexion
 {
 
@@ -9,7 +11,7 @@ class conexion
     {
         try {
 
-            $this->con = @mysqli_connect("localhost", "root", "", "papelera_super_db");
+            $this->con = @mysqli_connect(HOST, USER, "", DB);
 
             if (!$this->con) {
                 throw new Exception("error al conectarse a la base de datos");
