@@ -1,6 +1,6 @@
 <?php
 
-require($_SERVER['DOCUMENT_ROOT'] . "/bolsa_de_trabajo/config.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/bolsa_de_trabajo/config.php");
 
 
 if (isset($_GET['view'])) {
