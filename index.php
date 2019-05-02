@@ -8,3 +8,8 @@ if (isset($_GET['view'])) {
 } else {
     include_once 'controlador/principal-controlador.php';
 }
+
+public function test()
+{
+    echo 'es un test';
+}
