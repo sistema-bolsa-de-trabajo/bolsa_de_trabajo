@@ -8,3 +8,9 @@ if (isset($_GET['view'])) {
 } else {
     include_once 'controlador/principal-controlador.php';
 }
+
+
+public function nuevaFuncion()
+{
+    echo 'prueva de funcion';
+}

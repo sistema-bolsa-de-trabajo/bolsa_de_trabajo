@@ -11,5 +11,5 @@ $sql = "select * from personas";
 $resultado = mysqli_query($con, $sql);
 
 while ($lista = mysqli_fetch_array($resultado)) {
-    echo $lista['nombre_per'];
+    echo $lista['cv_per'];
 }
