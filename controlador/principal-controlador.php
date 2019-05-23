@@ -1,13 +1,10 @@
 <?php
 
-include_once(MODELO . "conexion.php");
+include_once(MODELO . "personas-modelo.php");
 
-$conexion = new conexion();
 
-$con = $conexion->getCon();
+$persona = new personas();
 
-$sql = "select * from personas";
-
-$resultado = mysqli_query($con, $sql);
+$resultado = $persona->getCv();
 
 include_once(VISTA . "principal-vista.php");
